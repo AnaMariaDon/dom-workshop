@@ -1,7 +1,7 @@
 //Navigator: Emelie, Ana Maria
 //Driver: Dennis
 
-const container = document.querySelector("container");
+const container = document.querySelector(".container");
 const button1 = document.createElement("button");
 const button2 = document.createElement("button");
 const button3 = document.createElement("button");
@@ -18,11 +18,12 @@ text.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. A n
 document.body.appendChild(button1);
 document.body.appendChild(button2);
 document.body.appendChild(button3);
-
 document.body.appendChild(text);
 
 button1.addEventListener("click", () => {
     text.style.backgroundColor = "#125497";
+    text.style.color = "#fff";
+    text.style.padding = "8px";
 });
 
 button2.addEventListener("click", () => {
@@ -31,5 +32,8 @@ button2.addEventListener("click", () => {
 
 button3.addEventListener("click", () => {
     text.textContent = "";
+    text.style.backgroundColor = "";
+    text.style.color = "";
+    text.style.padding = "";
 });
 
